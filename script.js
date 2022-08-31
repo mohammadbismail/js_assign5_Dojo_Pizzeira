@@ -1,18 +1,38 @@
-function pizzaOven(crustType, sauceType, cheeses, toppings) {
+function pizzaOven(one, two, three, four) {
   var pizza = {};
-  pizza.crustType = crustType;
-  pizza.sauceType = sauceType;
-  pizza.cheeses = cheeses;
-  pizza.toppings = toppings;
+  pizza.crustType = one;
+  pizza.sauceType = two;
+  pizza.cheeses = three;
+  pizza.toppings = four;
+
+
   return pizza;
 }
-function randomPizza() {
-  return Math.random();
-}
-var Pizza1 = pizzaOven("deep dish", "traditional", "mozzarella", [
-  "pepperoni",
-  "sausage",
-]);
+
+var ahmed = {
+  crustTyp: "cheese",
+  sauceType: "two",
+  cheeses: three,
+  toppings: four,
+};
+
+// function randomPizza() {
+//  return Math.random();
+// }
+var Pizza1 = pizzaOven(
+  "deep dish",
+  "traditional",
+  ["mozzarella"],
+  ["pepperoni", "sausage"]
+);
+
+Pizza1 = {
+  crustType: "deep dish",
+  sauceType: "traditional",
+  cheeses: ["mozeearella"],
+  toppings: ["pepperoni", "sausage"],
+};
+
 var Pizza2 = pizzaOven(
   "hand tossed",
   "marinara",
